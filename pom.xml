@@ -15,7 +15,7 @@
 	<description>Simple Blog project with Spring boot</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
@@ -35,6 +35,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
