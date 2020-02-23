@@ -11,10 +11,8 @@ public class Post {
 	
 	public Post() {
 	}
-	
-	public Post(String title,String content,String author) {
+	public Post(String title,String author) {
 		this.title = title;
-		this.content = content;
 		this.author = author;
 		this.posted = new Date();
 	}

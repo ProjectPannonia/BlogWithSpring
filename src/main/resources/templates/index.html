@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Simple blog</title>
+<title th:text = "${pageTitle}">Simple blog</title>
 
 <link rel="stylesheet"
 	href="../static/css/design.css" />
@@ -46,6 +46,18 @@
 				</div>
 			</div>
 		</nav>
+		<article th:each = "story : ${stories}">
+			<header>
+				<h1 th:text = "${story.title}"></h1>
+				<p th:text = "${story.posted}"></p>
+			</header>
+			<section>
+				<p th:text = "${story.content}"></p>
+			</section>
+			<footer>
+				<address th:text = "${story.author}"></address>
+			</footer>
+		</article>
 	</div>
 
 	<script
